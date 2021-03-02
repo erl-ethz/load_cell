@@ -1,0 +1,8 @@
+<launch>  
+  
+  <!-- Spawn the wrench_reader node : serial port ttyUSB0 -->
+  <node name="wrench_reader" pkg="load_cell" type="wrench_reader" output="screen">
+	   <param name="serial_port" value="/dev/ttyUSB0"/>
+  </node>
+
+</launch>
